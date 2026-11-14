@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#3b1727">
+<title>For Wiwi — Our Little Story</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient"></div>
+<header class="topbar">
+  <a class="brand" href="#">W <span>♥</span></a>
+  <div class="top-note">A LITTLE BOOK, MADE WITH LOVE</div>
+  <button class="sound-toggle" id="soundToggle" title="Music controls">♫</button>
+</header>
+
+<main>
+  <section class="intro">
+    <p class="eyebrow">A GIFT FOR SOMEONE SPECIAL</p>
+    <h1>For <em>Wiem</em>, my Wiwi.</h1>
+    <p class="intro-copy">Every page holds a memory. Every memory leads back to you.</p>
+  </section>
+
+  <section class="book-area" aria-label="Interactive memory book">
+    <div class="book-shell">
+      <div class="book-spine"></div>
+      <div id="book" class="flip-book">
+        <div class="page cover">
+          <div class="cover-frame">
+            <span class="tiny-flourish">✦ &nbsp; ♥ &nbsp; ✦</span>
+            <p class="cover-kicker">A BOOK OF US</p>
+            <h2>Happy<br>Birthday,<br><span>Wiwi</span></h2>
+            <div class="cover-heart">♥</div>
+            <p class="cover-bottom">To my Wiem · my waomti</p>
+            <span class="cover-date">MADE WITH ALL MY LOVE</span>
+          </div>
+        </div>
+
+        <div class="page paper intro-page">
+          <span class="page-label">01 — THE BEGINNING</span>
+          <div class="page-content">
+            <p class="script-title">Before We Met</p>
+            <h2>The beginning of us</h2>
+            <p class="poem">I didn't know that someone could become so important to me.
+Then you came into my life, and little by little, everything became more beautiful.</p>
+            <div class="stamp">♥</div>
+            <p class="small-note">Some stories are written in the stars. Ours is my favourite.</p>
+          </div>
+          <span class="page-number">01</span>
+        </div>
+
+        <div class="page paper date-page">
+          <span class="page-label">02 — A DAY TO REMEMBER</span>
+          <div class="page-content">
+            <div class="photo-frame hero-photo"><img src="assets/photos/first-date.jpg" alt="Our first date" onerror="this.style.display='none';this.parentElement.classList.add('empty')"><span class="photo-placeholder">Add your first-date photo</span></div>
+            <p class="script-title">Our First Date ♡</p>
+            <div class="date-card"><span>APRIL</span><strong>21</strong></div>
+            <p class="poem small-poem">I was nervous, a little awkward, and unsure… but that day turned into one of my favourite memories.</p>
+          </div>
+          <span class="page-number">02</span>
+        </div>
+
+        <div class="page paper song-page">
+          <span class="page-label">03 — OUR SOUNDTRACK</span>
+          <div class="page-content">
+            <p class="script-title">Our Favourite Song ♡</p>
+            <div class="vinyl"><div class="vinyl-label">W ♥ W</div></div>
+            <h2 id="songName">The song that reminds me of you</h2>
+            <p class="poem small-poem">Some songs are more than melodies. They hold places, moments, and people. This one will always remind me of us.</p>
+            <audio id="audioPlayer" controls preload="metadata"></audio>
+            <p class="audio-help" id="audioHelp">Add your song using the music button below the book.</p>
+            <a class="text-link" id="songLink" href="#" target="_blank" rel="noopener" hidden>Open our song ↗</a>
+          </div>
+          <span class="page-number">03</span>
+        </div>
+
+        <div class="page paper letter-page">
+          <span class="page-label">04 — FROM MY HEART</span>
+          <div class="page-content letter">
+            <p class="script-title">A Letter for You ♡</p>
+            <p>I didn't know how much you would mean to me, but now I can't imagine my days without you.</p>
+            <p>You came into my life so quietly, yet you changed everything in the most beautiful way.</p>
+            <p>It's the little moments with you that became my favourite memories.</p>
+            <p>And even on the quiet days, just having you there is enough for me.</p>
+            <p>I just want you to know, Wiwi: you mean more to me than words can say.</p>
+            <p class="signature">Forever yours, ♥</p>
+          </div>
+          <span class="page-number">04</span>
+        </div>
+
+        <div class="page paper quote-page">
+          <span class="page-label">05 — ALWAYS YOU</span>
+          <div class="page-content">
+            <div class="quote-mark">“</div>
+            <p class="big-quote">I keep choosing you, over and over again.</p>
+            <p class="script-title">My favourite person</p>
+            <p class="poem small-poem">No matter how many pages life gives us, I hope I get to fill them with you.</p>
+            <div class="tiny-hearts">♡ &nbsp; ♥ &nbsp; ♡</div>
+          </div>
+          <span class="page-number">05</span>
+        </div>
+
+        <div class="page paper photos-intro">
+          <span class="page-label">06 — OUR LITTLE WORLD</span>
+          <div class="page-content">
+            <p class="script-title">Our Moments</p>
+            <h2>Little pieces of forever</h2>
+            <p class="poem">The laughs, the quiet moments, the silly pictures, and all the memories I never want to forget.</p>
+            <div class="polaroid-stack"><span>♥</span><small>US, IN A THOUSAND LITTLE MOMENTS</small></div>
+          </div>
+          <span class="page-number">06</span>
+        </div>
+
+        <div class="page paper ending-page">
+          <div class="end-frame">
+            <p class="script-title">To my Wiwi</p>
+            <div class="end-heart">♥</div>
+            <h2>Happy Birthday,<br>my waomti.</h2>
+            <p>May your days be as lovely as the happiness you bring into mine.</p>
+            <p class="signature">I love you. Always. ♡</p>
+          </div>
+          <span class="page-number">07</span>
+        </div>
+      </div>
+    </div>
+    <div class="book-controls">
+      <button id="prevBtn" class="nav-btn" aria-label="Previous page">←</button>
+      <span id="pageCounter">Cover · 1 / 8</span>
+      <button id="nextBtn" class="nav-btn" aria-label="Next page">→</button>
+    </div>
+    <p class="flip-hint">Turn the pages with the arrows, swipe, or drag a page corner.</p>
+  </section>
+
+  <section class="customize">
+    <div class="custom-head"><p class="eyebrow">MAKE IT YOURS</p><h2>Add your memories</h2><p>Choose your photos and your song. They will appear inside the book on this device.</p></div>
+    <div class="upload-grid">
+      <label class="upload-card"><span class="upload-icon">▧</span><strong>Add your photos</strong><small>Choose multiple pictures. The book makes pages with one or two photos each.</small><input id="photoFiles" type="file" accept="image/*" multiple></label>
+      <label class="upload-card"><span class="upload-icon">♫</span><strong>Add your song</strong><small>Choose an MP3 or audio file to play on the music page.</small><input id="musicFile" type="file" accept="audio/*"></label>
+    </div>
+    <div class="share-row">
+      <input id="songUrl" type="url" placeholder="Optional song link (Spotify / YouTube URL)">
+      <button id="saveSongLink" class="action-btn">Save song link</button>
+    </div>
+    <p class="privacy-note">Your selected photos and music are not uploaded automatically. To share the finished book with Wiwi, add the media files to the GitHub repository along with the website.</p>
+  </section>
+</main>
+<footer>Made for Wiem · Wiwi · waomti <span>♥</span></footer>
+<script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+<script src="app.js"></script>
+</body></html>
